@@ -1,0 +1,447 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gowtham V | Portfolio</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f9fa;
+    color:#333;
+}
+
+.navbar{
+    background:#0d1b2a;
+}
+
+.navbar-brand,
+.nav-link{
+    color:white !important;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:linear-gradient(135deg,#0d1b2a,#1b263b);
+    color:white;
+}
+
+.hero img{
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid white;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-weight:700;
+    color:#0d1b2a;
+}
+
+.card{
+    border:none;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.skill-badge{
+    margin:5px;
+    padding:10px 15px;
+    font-size:15px;
+}
+
+.service-icon{
+    font-size:45px;
+    color:#0d6efd;
+}
+
+footer{
+    background:#0d1b2a;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.contact-box{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode .card,
+.dark-mode .contact-box{
+    background:#1e1e1e;
+    color:white;
+}
+
+.dark-mode .section-title{
+    color:white;
+}
+
+.dark-mode footer{
+    background:#000;
+}
+
+.dark-btn{
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+.hero{
+    text-align:center;
+}
+.hero img{
+    margin-top:30px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<div class="container">
+<a class="navbar-brand fw-bold" href="#">Gowtham V</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+<li class="nav-item"><a class="nav-link" href="#certifications">Certificates</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+<li class="nav-item">
+<button class="btn btn-warning ms-2 dark-btn" onclick="toggleMode()">
+<i class="bi bi-moon-fill"></i>
+</button>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+<div class="container">
+<div class="row align-items-center">
+
+<div class="col-md-7">
+<h4>Hello, I'm</h4>
+<h1 class="display-3 fw-bold">Gowtham V</h1>
+
+<h4 class="mb-3">
+Electronics & Communication Engineering Student
+</h4>
+
+<p class="lead">
+Embedded Systems | IoT | Software Development
+</p>
+
+<p>
+I am passionate about building innovative embedded systems and IoT solutions.
+With hands-on experience in PIC16F877A microcontrollers, Embedded C, Python,
+and FPGA development, I enjoy transforming ideas into practical technology solutions.
+</p>
+
+<a href="Gowtham_V_Resume.docx" class="btn btn-primary btn-lg me-3">
+Download Resume
+</a>
+
+<a href="#contact" class="btn btn-outline-light btn-lg">
+Contact Me
+</a>
+</div>
+
+<div class="col-md-5 text-center">
+<img src="gowtham.jpeg" alt="Profile Photo">
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-5">
+<div class="container">
+<h2 class="section-title">About Me</h2>
+
+<div class="row">
+<div class="col-lg-6">
+<p>
+I am a final-year Electronics and Communication Engineering student at
+University College of Engineering, BIT Campus.
+</p>
+
+<p>
+My academic journey and industry internships have equipped me with strong
+technical knowledge in Embedded Systems, IoT, Telecommunications, and Software Development.
+</p>
+
+<p>
+I have worked on real-world projects involving microcontrollers, sensors,
+UART communication, FPGA design, and automation systems.
+My goal is to build a successful career as a Software Engineer and Embedded Systems Developer.
+</p>
+</div>
+
+<div class="col-lg-6">
+<ul class="list-group">
+<li class="list-group-item"><b>Name:</b> Gowtham V</li>
+<li class="list-group-item"><b>Degree:</b> B.E. Electronics & Communication Engineering</li>
+<li class="list-group-item"><b>College:</b> University College of Engineering, BIT Campus</li>
+<li class="list-group-item"><b>Location:</b> Namakkal, Tamil Nadu</li>
+<li class="list-group-item"><b>Email:</b> gowthamv9865@gmail.com</li>
+<li class="list-group-item"><b>Phone:</b> +91 8680042696</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="py-5 bg-light">
+<div class="container">
+<h2 class="section-title">Skills</h2>
+
+<div class="text-center">
+
+<span class="badge bg-primary skill-badge">C Programming</span>
+<span class="badge bg-success skill-badge">Python</span>
+<span class="badge bg-danger skill-badge">Embedded C</span>
+<span class="badge bg-warning text-dark skill-badge">PIC16F877A</span>
+<span class="badge bg-info text-dark skill-badge">UART Communication</span>
+<span class="badge bg-secondary skill-badge">IoT</span>
+<span class="badge bg-dark skill-badge">FPGA Design</span>
+<span class="badge bg-primary skill-badge">Telecommunication</span>
+<span class="badge bg-success skill-badge">MPLAB IDE</span>
+<span class="badge bg-danger skill-badge">Proteus</span>
+<span class="badge bg-warning text-dark skill-badge">VIVADO</span>
+
+</div>
+</div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-5">
+<div class="container">
+<h2 class="section-title">Projects</h2>
+
+<div class="row g-4">
+
+<div class="col-md-6">
+<div class="card p-4 h-100">
+<h4>Automatic Earthquake Monitoring System</h4>
+<p>
+Designed and developed an earthquake detection system using SW-420 vibration sensors
+and PIC16F877A microcontroller with real-time monitoring.
+</p>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="card p-4 h-100">
+<h4>PIC16F877A UART Communication System</h4>
+<p>
+Developed UART-based serial communication applications enabling efficient data transfer.
+</p>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="card p-4 h-100">
+<h4>IoT-Based Sensor Monitoring System</h4>
+<p>
+Built an IoT-enabled sensor monitoring solution capable of collecting environmental data.
+</p>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="card p-4 h-100">
+<h4>FPGA Digital Design Project</h4>
+<p>
+Implemented digital logic circuits using VIVADO FPGA tools and programmable hardware design.
+</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Services -->
+<section id="services" class="py-5 bg-light">
+<div class="container">
+<h2 class="section-title">Services</h2>
+
+<div class="row g-4">
+
+<div class="col-md-3">
+<div class="card p-4 text-center">
+<i class="bi bi-cpu-fill service-icon"></i>
+<h5 class="mt-3">Embedded Systems</h5>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card p-4 text-center">
+<i class="bi bi-wifi service-icon"></i>
+<h5 class="mt-3">IoT Solutions</h5>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card p-4 text-center">
+<i class="bi bi-code-square service-icon"></i>
+<h5 class="mt-3">Microcontroller Programming</h5>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card p-4 text-center">
+<i class="bi bi-globe service-icon"></i>
+<h5 class="mt-3">Web Development</h5>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Certifications -->
+<section id="certifications" class="py-5">
+<div class="container">
+<h2 class="section-title">Certifications</h2>
+
+<div class="card p-4">
+<ul>
+<li>NPTEL – Design Thinking</li>
+<li>Masterclass in Internet of Things (IoT)</li>
+<li>FPGA Design using VIVADO</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- Achievements -->
+<section class="py-5 bg-light">
+<div class="container">
+<h2 class="section-title">Achievements</h2>
+
+<div class="card p-4">
+<ul>
+<li>Successfully completed Telecommunication Internship at BSNL.</li>
+<li>Successfully completed Embedded Systems Internship at CodeBind Technologies.</li>
+<li>Developed multiple embedded hardware-software integration projects.</li>
+<li>Acquired hands-on experience in FPGA and IoT technologies.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5">
+<div class="container">
+<h2 class="section-title">Get In Touch</h2>
+
+<div class="row justify-content-center">
+<div class="col-md-8">
+
+<div class="contact-box">
+
+<p>
+<i class="bi bi-envelope-fill"></i>
+<b>Email:</b> gowthamv9865@gmail.com
+</p>
+
+<p>
+<i class="bi bi-telephone-fill"></i>
+<b>Phone:</b> +91 8680042696
+</p>
+
+<p>
+<i class="bi bi-geo-alt-fill"></i>
+<b>Location:</b> Namakkal, Tamil Nadu, India
+</p>
+
+<p>
+<i class="bi bi-linkedin"></i>
+<a href="https://linkedin.com/in/gowtham-v-8a374339b" target="_blank">
+LinkedIn Profile
+</a>
+</p>
+
+<p>
+<i class="bi bi-github"></i>
+<a href="https://github.com/gowthamv9865-alt" target="_blank">
+GitHub Profile
+</a>
+</p>
+
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 Gowtham V. All Rights Reserved.</p>
+<p>Designed with passion for Embedded Systems and Software Development.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+function toggleMode(){
+document.body.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>
+```
